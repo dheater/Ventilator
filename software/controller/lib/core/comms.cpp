@@ -1,8 +1,8 @@
 #include "comms.h"
 
-#include "algorithm.h"
 #include "hal.h"
 #include "network_protocol.pb.h"
+#include <algorithm>
 #include <optional>
 #include <pb_common.h>
 #include <pb_decode.h>
