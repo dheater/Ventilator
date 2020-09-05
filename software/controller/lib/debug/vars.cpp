@@ -14,7 +14,6 @@ limitations under the License.
 */
 
 #include "vars.h"
-#include "debug.h"
 #include <cstring>
 #include <string.h>
 
