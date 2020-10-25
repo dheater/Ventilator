@@ -34,6 +34,9 @@ The following are configuration profiles we have used in Chitubox for some of th
 * [Anycubic Photon & 70:30 Fast:Tenacious blend](AnyCubic_Photon_Fast7_+_tenacious3_profile.cfg)
 * **TODO:** add Elegoo Mars configs
 
+There is a page with additional advice on using Chitubox with the Anycubic Photon printer
+[here](https://all3dp.com/2/chitubox-anycubic-photon-settings-profile/).
+
 ### Kind request
 
 When you print a new part, you may customize the scaffolding which provides some improvement over the defaults. If you
