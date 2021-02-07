@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classunits__detail_1_1Scalar.html" title=" " alt="" coords="5,201,152,243"/>
+<area shape="rect" id="node2" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,5,384,47"/>
+<area shape="rect" id="node4" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,71,384,112"/>
+<area shape="rect" id="node6" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,136,384,177"/>
+<area shape="rect" id="node8" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,201,384,243"/>
+<area shape="rect" id="node10" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,267,384,308"/>
+<area shape="rect" id="node12" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="200,332,391,373"/>
+<area shape="rect" id="node14" href="$classunits__detail_1_1ArithScalar.html" title=" " alt="" coords="207,397,384,439"/>
+<area shape="rect" id="node3" href="$classLength.html" title=" " alt="" coords="467,13,533,39"/>
+<area shape="rect" id="node5" href="$classVolume.html" title=" " alt="" coords="465,78,535,105"/>
+<area shape="rect" id="node7" href="$classDuration.html" title=" " alt="" coords="461,143,539,170"/>
+<area shape="rect" id="node9" href="$classPressure.html" title=" " alt="" coords="461,209,539,235"/>
+<area shape="rect" id="node11" href="$classVoltage.html" title=" " alt="" coords="465,274,535,301"/>
+<area shape="rect" id="node13" href="$classVolumetricFlow.html" title=" " alt="" coords="439,339,561,366"/>
+</map>

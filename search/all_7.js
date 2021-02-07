@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['debug_20serial_20interface_68',['Debug serial interface',['../md__home_runner_work_Ventilator_Ventilator_software_controller_lib_debug_README.html',1,'(Global Namespace)'],['../md__home_runner_work_Ventilator_Ventilator_software_utils_controller_debug.html',1,'(Global Namespace)']]],
-  ['debugcmd_69',['DebugCmd',['../classDebugCmd.html',1,'']]],
-  ['debugfloat_70',['DebugFloat',['../classDebugFloat.html',1,'']]],
-  ['debugint32_71',['DebugInt32',['../classDebugInt32.html',1,'']]],
-  ['debugserial_72',['DebugSerial',['../classDebugSerial.html',1,'']]],
-  ['debuguint32_73',['DebugUInt32',['../classDebugUInt32.html',1,'']]],
-  ['debugvar_74',['DebugVar',['../classDebugVar.html',1,'']]],
-  ['debugvarbase_75',['DebugVarBase',['../classDebugVarBase.html',1,'']]],
-  ['design_20rationales_76',['Design Rationales',['../md__home_runner_work_Ventilator_Ventilator_design_design_rationales.html',1,'']]],
-  ['display_20panel_77',['Display panel',['../md__home_runner_work_Ventilator_Ventilator_manufacturing_enclosed_build_display_panel_README.html',1,'']]],
-  ['diy_20test_20lung_78',['DIY Test Lung',['../md__home_runner_work_Ventilator_Ventilator_quality_assurance_testing_test_lung_README.html',1,'']]],
-  ['dma_5fregs_79',['DMA_Regs',['../structDMA__Regs.html',1,'']]],
-  ['dmactrl_80',['DMACtrl',['../classDMACtrl.html',1,'']]],
-  ['do_5fconsole_81',['do_console',['../classcontroller__debug_1_1CmdLine.html#ad8d302aab5aa6b0af391fa0d467b9982',1,'controller_debug::CmdLine']]],
-  ['do_5fdebug_82',['do_debug',['../classcontroller__debug_1_1CmdLine.html#a13fe004644810f52678bac1d3b858086',1,'controller_debug::CmdLine']]],
-  ['do_5fexec_83',['do_exec',['../classcontroller__debug_1_1CmdLine.html#ac3769e1ca1450efb74aee5a86a35cf10',1,'controller_debug::CmdLine']]],
-  ['do_5fpeek_84',['do_peek',['../classcontroller__debug_1_1CmdLine.html#a54b406ac5d83b702963841ffddbb8338',1,'controller_debug::CmdLine']]],
-  ['do_5fpoke_85',['do_poke',['../classcontroller__debug_1_1CmdLine.html#a8aed34f94a8bf03f233f2760da2fcc5a',1,'controller_debug::CmdLine']]],
-  ['do_5ftrace_86',['do_trace',['../classcontroller__debug_1_1CmdLine.html#a3b6616971c497d7ea410488a49177730',1,'controller_debug::CmdLine']]],
-  ['dummyrxlistener_87',['DummyRxListener',['../classDummyRxListener.html',1,'']]],
-  ['dummytxlistener_88',['DummyTxListener',['../classDummyTxListener.html',1,'']]],
-  ['duration_89',['Duration',['../classDuration.html',1,'']]]
+  ['halapi_46',['HalApi',['../classHalApi.html',1,'']]]
 ];
