@@ -1,0 +1,32 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node78 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node78 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="AlarmManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAlarmManager.html",tooltip=" "];
+  Node78 -> Node80 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="BreathSignalsTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBreathSignalsTest.html",tooltip=" "];
+  Node78 -> Node81 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="GuiStateContainer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGuiStateContainer.html",tooltip=" "];
+  Node78 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="LatchingAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLatchingAlarm.html",tooltip=" "];
+  Node82 -> Node83 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="MaxPressureAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMaxPressureAlarm.html",tooltip=" "];
+  Node82 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="PatientDetachedAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPatientDetachedAlarm.html",tooltip=" "];
+  Node82 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="PipExceededAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPipExceededAlarm.html",tooltip=" "];
+  Node82 -> Node86 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 [label="PipNotReachedAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPipNotReachedAlarm.html",tooltip=" "];
+  Node78 -> Node87 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node87 [label="LatchingAlarmTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLatchingAlarmTest.html",tooltip=" "];
+  Node78 -> Node88 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node88 [label="LoggerTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLoggerTest.html",tooltip=" "];
+  Node78 -> Node89 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node89 [label="PatientDetachedAlarmTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPatientDetachedAlarmTest.html",tooltip=" "];
+  Node78 -> Node90 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node90 [label="SimpleClock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSimpleClock.html",tooltip="Clock class that emit current datetime in a given interval."];
+}
