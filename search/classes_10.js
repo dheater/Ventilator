@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['time_205',['Time',['../classTime.html',1,'']]],
-  ['timerregs_206',['TimerRegs',['../structTimerRegs.html',1,'']]],
-  ['timeseriesgraph_207',['TimeSeriesGraph',['../classTimeSeriesGraph.html',1,'']]],
-  ['timeseriesgraphpainter_208',['TimeSeriesGraphPainter',['../classTimeSeriesGraphPainter.html',1,'']]],
-  ['trace_209',['Trace',['../classTrace.html',1,'']]],
-  ['tracecmd_210',['TraceCmd',['../classTraceCmd.html',1,'']]]
+  ['uart_5fdma_229',['UART_DMA',['../classUART__DMA.html',1,'']]],
+  ['uart_5fdma_5frxlistener_230',['UART_DMA_RxListener',['../classUART__DMA__RxListener.html',1,'']]],
+  ['uart_5fdma_5ftxlistener_231',['UART_DMA_TxListener',['../classUART__DMA__TxListener.html',1,'']]],
+  ['uart_5fregs_232',['UART_Regs',['../structUART__Regs.html',1,'']]]
 ];
