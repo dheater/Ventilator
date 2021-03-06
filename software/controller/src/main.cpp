@@ -16,9 +16,9 @@ limitations under the License.
 #include "actuators.h"
 #include "comms.h"
 #include "controller.h"
-#include "debug.h"
 #include "eeprom.h"
 #include "hal.h"
+#include "interface.h"
 #include "network_protocol.pb.h"
 #include "nvparams.h"
 #include "sensors.h"
@@ -51,6 +51,7 @@ static ControllerStatus controller_status;
 static Sensors sensors;
 static NVParams::Handler nv_params;
 static I2Ceeprom eeprom = I2Ceeprom(0x50, 64, 32768, &i2c1);
+static Debug::Interface debug;
 
 static SensorsProto AsSensorsProto(const SensorReadings &r,
                                    const ControllerState &c) {
@@ -94,7 +95,7 @@ static void high_priority_task(void *arg) {
       controller_state.pressure_setpoint.cmH2O();
 
   // Sample any trace variables that are enabled
-  trace.MaybeSample();
+  debug.SampleTraceVars();
 
   // Pet the watchdog
   Hal.watchdog_handler();
