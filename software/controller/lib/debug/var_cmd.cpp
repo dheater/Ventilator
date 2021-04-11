@@ -27,16 +27,17 @@ ErrorCode VarHandler::Process(Context *context) {
   if (context->request_length < 1)
     return ErrorCode::kMissingData;
 
-  switch (context->request[0]) {
+  Subcommand subcommand{context->request[0]};
 
+  switch (subcommand) {
   // Return info about one of the variables.
-  case 0:
+  case Subcommand::kGetInfo:
     return GetVarInfo(context);
 
-  case 1:
+  case Subcommand::kGet:
     return GetVar(context);
 
-  case 2:
+  case Subcommand::kSet:
     return SetVar(context);
 
   default:
@@ -101,6 +102,7 @@ ErrorCode VarHandler::GetVarInfo(Context *context) {
   count += static_cast<uint32_t>(help_length);
 
   context->response_length = count;
+  *(context->processed) = true;
   return ErrorCode::kNone;
 }
 
@@ -120,6 +122,7 @@ ErrorCode VarHandler::GetVar(Context *context) {
 
   u32_to_u8(var->GetValue(), context->response);
   context->response_length = 4;
+  *(context->processed) = true;
   return ErrorCode::kNone;
 }
 
@@ -141,6 +144,7 @@ ErrorCode VarHandler::SetVar(Context *context) {
 
   var->SetValue(u8_to_u32(context->request + 3));
   context->response_length = 0;
+  *(context->processed) = true;
   return ErrorCode::kNone;
 }
 

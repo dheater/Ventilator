@@ -14,6 +14,7 @@ limitations under the License.
 */
 
 #include "actuators.h"
+#include "commands.h"
 #include "comms.h"
 #include "controller.h"
 #include "eeprom.h"
@@ -51,7 +52,26 @@ static ControllerStatus controller_status;
 static Sensors sensors;
 static NVParams::Handler nv_params;
 static I2Ceeprom eeprom = I2Ceeprom(0x50, 64, 32768, &i2c1);
-static Debug::Interface debug;
+
+// Global variables for the debug interface
+static Debug::Trace trace;
+// Create a handler for each of the known commands that the Debug Handler can
+// link to.  This is a bit tedious but I can't find a simpler way.
+static Debug::Command::ModeHandler mode_command;
+static Debug::Command::PeekHandler peek_command;
+static Debug::Command::PokeHandler poke_command;
+static Debug::Command::VarHandler var_command;
+static Debug::Command::TraceHandler trace_command(&trace);
+static Debug::Command::EepromHandler eeprom_command(&eeprom);
+
+static Debug::Interface debug(&trace, 12, Debug::Command::Code::kMode,
+                              &mode_command, Debug::Command::Code::kPeek,
+                              &peek_command, Debug::Command::Code::kPoke,
+                              &poke_command, Debug::Command::Code::kVariable,
+                              &var_command, Debug::Command::Code::kTrace,
+                              &trace_command,
+                              Debug::Command::Code::kEepromAccess,
+                              &eeprom_command);
 
 static SensorsProto AsSensorsProto(const SensorReadings &r,
                                    const ControllerState &c) {
