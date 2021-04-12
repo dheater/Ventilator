@@ -29,4 +29,5 @@ Table of Contents
    hardware/index
    software/index
    process/index
+   BOM/index
    contributing/contributing

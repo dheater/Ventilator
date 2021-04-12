@@ -16,7 +16,7 @@
 from sphinx.builders.html import StandaloneHTMLBuilder
 import subprocess, os
 import mlx.traceability
-
+import csv
 
 # Doxygen
 subprocess.call("doxygen", shell=True)
@@ -104,3 +104,64 @@ rst_prolog = """
 
 traceability_render_relationship_per_item = True
 traceability_collapse_links = True
+
+
+def get_rw_vendor_code(vendor):
+    vendors = {
+        "RESPIRAWORKS": "Rw",
+        "ALI EXPRESS": "A",
+        "MCMASTER-CARR": "C",
+        "CABLES & SENSORS": "Cs",
+        "FAST EDDY BEARINGS": "F",
+        "GRAINGER": "G",
+        "GENERANT": "Gn",
+        "DIGIKEY": "K",
+        "MOUSER": "M",
+        "MONOPRICE": "O",
+        "RS COMPUTING": "R",
+        "ST": "S",
+        "SMC PNEUMATICS": "Sm",
+        "STEPPERONLINE.COM": "T",
+        "UFLOW": "U",
+        "WONSMART": "W",
+        "AMAZON": "A",
+    }
+
+    try:
+        return vendors[vendor.upper()]
+    except KeyError:
+        return "UNKNOWN MANUFACTURER"
+
+
+def format_bom():
+    f = open("BOM/BOM_formatted.csv", "a")
+    f.truncate(0)  # delete existing content in file
+
+    in_filename = "BOM/BOM_raw.csv"
+    with open(in_filename) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=",")
+
+        linenum = 0
+        for row in csv_reader:
+            if linenum == 0:
+                f.write(
+                    row[1] + "," + row[2] + "," + row[3] + ", RW Part Number" + "\n"
+                )
+            else:
+                f.write(
+                    row[1]
+                    + ","
+                    + row[2]
+                    + ","
+                    + ":ref:`"
+                    + row[3]
+                    + "`,"
+                    + get_rw_vendor_code(row[2])
+                    + "\n"
+                )
+            linenum += 1
+
+    f.close()
+
+
+format_bom()

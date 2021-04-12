@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - 1011-BOM-dh
 
 jobs:
   build:
