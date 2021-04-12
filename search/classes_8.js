@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['i2c_5fregs_171',['I2C_Regs',['../structI2C__Regs.html',1,'']]],
-  ['i2ceeprom_172',['I2Ceeprom',['../classI2Ceeprom.html',1,'']]],
-  ['intctrl_5fregs_173',['IntCtrl_Regs',['../structIntCtrl__Regs.html',1,'']]]
+  ['halapi_167',['HalApi',['../classHalApi.html',1,'']]],
+  ['handler_168',['Handler',['../classNVParams_1_1Handler.html',1,'NVParams::Handler'],['../classDebug_1_1Command_1_1Handler.html',1,'Debug::Command::Handler']]]
 ];
